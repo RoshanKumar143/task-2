@@ -22,6 +22,7 @@
 /* Banner-section */
 #banner-section{
     background-image:url("banner_img.jpg");
+    background-color:"black";
     height: 100vh;
     background-size: cover;
 }
