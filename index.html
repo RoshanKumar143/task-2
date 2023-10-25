@@ -5,7 +5,8 @@
         <link rel="icon" href="Images/coffee-logo.png"/>
         <link rel="stylesheet" href="style.css"/>
 <!-- Bootstrap link -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <!-- FontAwesome -->
         <script src="https://kit.fontawesome.com/f230026de7.js" crossorigin="anonymous"></script>
         
@@ -14,30 +15,59 @@
     <body>
 
 <!-- Navigation-Bar -->
-        <nav class="navbar navbar-expand-lg bg-body-secondary fixed-top">
-            <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img style="width: 100px;height: 50px;" src="Images/coffee-logo-removebg-preview.png"/>
-            </a>
-            <h1 style="color: crimson;font-size: large;font-weight: bolder;text-align: center;justify-content: center;">TEA TIME GURU</h1>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ms-auto">
-                <a class="nav-link" href="#wcu-section" id="nav-item">Why Choose Us?</a>
-                <a class="nav-link" href="#explore-menu-section" id="nav-item">Explore Menu</a>
-                <a class="nav-link" href="#paymentsection" id="nav-item">Delivery & Payment</a>
-                <a class="nav-link" href="#followus" id="nav-item">Follow Us</a>
-                </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-success fixed-top">  <!--bg-light-->
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img style="width: 100px;height: 50px;" src="Images/coffee-logo-removebg-preview.png"/>
+        </a>
+        <h1 style="color: crimson;font-size: large;font-weight: bolder;text-align: center;justify-content: center;">TEA TIME GURU</h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#wcu-section" id="nav-item">Why Choose Us?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#explore-menu-section" id="nav-item">Explore Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#paymentsection" id="nav-item">Delivery & Payment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#followus" id="nav-item">Follow Us</a>
+          </li>
+          <li class="nav-item">
+            <div class="mode">
+                <h1 id="nav-change-mode" onclick="changeMode()"><i class="fa-regular fa-moon fa-sm"></i></h1>
             </div>
-            </div>
-        </nav>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
 <!-- Banner-section -->
         <div id="banner-section" class="d-flex justify-content-center">
             <div id="coupon">
                 <button onclick="closeCoupon()">&times;</button>
+                <div class="coupon-text">
+                    <h1 class="coupon-heading">FESTIVE <br> COMBO</h1>
+                    <h6 class="sub-coupon-heading">Grab The Ultimate Deal Right Now</h6>    
+                    <h3 class="coupon-para">Get 50% off on first Order</h3>  
+                    <div class="coupon-code">
+                        <div class="coupon-tag">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="50" fill="currentColor" class="bi bi-tags" viewBox="0 0 16 16">
+                                <path d="M3 2v4.586l7 7L14.586 9l-7-7H3zM2 2a1 1 0 0 1 1-1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 2 6.586V2z"/>
+                                <path d="M5.5 5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm0 1a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM1 7.086a1 1 0 0 0 .293.707L8.75 15.25l-.043.043a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 0 7.586V3a1 1 0 0 1 1-1v5.086z"/>
+                              </svg>        
+                        </div>
+                        <div class="coupon-text-div">
+                            <h1 class="coupon-text-header">APPLY CODE <br> <span>FESTIVE</span></h1>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="banner-content">
                 <h1 class="banner-heading mb-3"><span style="color: crimson;"> COFFEE </span>AND FRIENDS <br>MAKE PERFECT BLEND </h1>
@@ -58,7 +88,7 @@
 
                     <div class="col-12 col-md-4">
                         <div class="wcu-card">
-                            <img src="Images/online-order.jpg" class="wcu-card-image" />
+                            <img src="Images/online-order-removebg-preview.png" class="wcu-card-image" />
                             <h1 class="wcu-card-title pb-2">Online Order</h1>
                             <p class="wcu-card-description pb-3">
                                 There is online order facility available from our coffee shop.
@@ -68,7 +98,7 @@
 
                     <div class="col-12 col-md-4">
                         <div class="wcu-card">
-                            <img src="Images/online-order.jpg" class="wcu-card-image" />
+                            <img src="Images/online-order-removebg-preview.png" class="wcu-card-image" />
                             <h1 class="wcu-card-title">Fresh Coffee</h1>
                             <p class="wcu-card-description">
                                 The Staff in Coffee shop can prepare coffee at the moment of order placed.And will be delivered with in stipulated time.
@@ -78,7 +108,7 @@
 
                     <div class="col-12 col-md-4">
                         <div class="wcu-card">
-                            <img src="Images/online-order.jpg" class="wcu-card-image" />
+                            <img src="Images/online-order-removebg-preview.png" class="wcu-card-image" />
                             <h1 class="wcu-card-title">On First Order</h1>
                             <p class="wcu-card-description">
                                 Coupons & Offers upto
@@ -97,12 +127,7 @@
                 <div class="row">
                     <div class="col-12">
                         <h1 class="menu-section-heading">Menu Card</h1>
-                        <a href="#">View All 
-        <!-- bootstrap-icon  -->
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-right" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8Zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5Z"/>
-                            </svg>
-                        </a> 
+
                         <marquee>Please View Menu Card By Clicking on View All</marquee>      
                     </div>
 
@@ -161,7 +186,12 @@
                             <h1 class="menu-item-title">Desserts</h1>                     
                         </div>
                     </div>
-                    
+                    <a href="#">View All 
+                        <!-- bootstrap-icon  -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8Zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5Z"/>
+                        </svg>
+                    </a> 
                 </div>
             </div>            
         </div>
@@ -236,8 +266,5 @@
             </div>
         </div>
         
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>    
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </body>
 </html>

@@ -7,7 +7,6 @@
 
 /* navigation-Bar */
 #nav-item{
-    float: right;
     color: black;
     text-align: center;
 }
@@ -17,6 +16,9 @@
     border: 2px solid red;
     font-size: 20px ;
     transition: .5s ease;
+}
+.mode{
+    text-align: center;
 }
 
 /* Banner-section */
@@ -28,15 +30,62 @@
 }
 
 #coupon{
-    width: 1000px;
+    background: url("Images/coffee-bg-img-4.jpg");
+    background-size: cover;
+    width: 90%;
     height: 400px;
-    background-color: red;
+    background-color: goldenrod;
     position: absolute;
     margin-top: 10%;
-    margin-left: 3%;
+    margin-right: 3%;
     z-index: 100;
     /* visibility: hidden; */
+    position: fixed;
 }
+.coupon-text{
+    text-align: center;
+}
+.coupon-heading{
+    margin-top: 100px;
+    font-size: 40px;
+    color: #ffff;
+    text-shadow: -2px -4px 2px purple ;
+}
+.sub-coupon-heading{
+    color: #ffff;
+    text-transform:uppercase;
+}
+.coupon-para{
+    color: #ffffff;
+    text-transform: capitalize;
+}
+
+.coupon-code{
+    margin: 15px 40%;
+    background-color: purple;
+    border-radius: 14px;
+    padding: 10px;
+}
+.coupon-tag{
+    float: left;
+    color: white;
+}
+
+.coupon-text-div{
+    /* border-left: 2px solid red; */
+}
+.coupon-text-header{
+    font-size: 17px;
+    color: purple;
+    color: yellow;
+}
+.coupon-text-header span{
+    color: white;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+
 
 .banner-content{
     text-align: center;
@@ -68,7 +117,7 @@
 
 /* why choose us - section */
 #wcu-section {
-    background-color: rgb(181, 177, 177);
+    /* background-color: rgb(181, 177, 177); */
 }
 
 .wcu-section-heading {
@@ -79,17 +128,16 @@
 }
 
 .wcu-section-description {
-    color: #02080d;
     font-family: "Roboto";
     font-size: 16px;
 }
 
 .wcu-card {
     text-align: center;
-    background-color: white;
+    /* background-color: white; */
     border-style: solid;
     border-width: 10px;
-    border-color: rgb(157, 197, 158);
+    /* border-color: rgb(157, 197, 158); */
     border-radius: 16px;
 }
 .wcu-card-image {
@@ -98,7 +146,7 @@
 }
 
 .wcu-card-title {
-    color: #323f4b;
+    /* color: #323f4b; */
     font-family: "Roboto";
     font-size: 22px;
     font-weight: 500;
@@ -117,31 +165,31 @@
 
 /* Menu-section */
 .explore-menu-section{
-    background-color: #ced5db;
+    /* background-color: #ced5db; */
 }
 .explore-menu-section a {
     text-decoration: none;
-    background-color: rgb(160, 160, 179);
+    /* background-color: rgb(160, 160, 179); */
     font-size: large;
     font-weight: bolder;
     border-radius: 20%;
     color: blue;
     padding:0px 10px ;
+    margin-left: 88%;
 }
 
 .menu-section-heading {
-    color: #010b13;
+    /* color: #010b13; */
     font-family: "Roboto";
     font-size: 28px;
     font-weight: 700;
 }
 
 .menu-item-images {
-    border-radius: 16px;
     height: 150px;
     width:90%;
     padding-left: 5%;
-    border-radius: 40px;
+    border-radius: 50%;
 }
 
 .menu-item-title {
@@ -162,7 +210,7 @@
 
 /* Delivery & payment section */
 .delivery-and-payment-section {
-    background-color: white;
+    /* background-color: white; */
 }
 
 .delivery-and-payment-section-img {
@@ -170,7 +218,7 @@
 }
 
 .delivery-and-payment-section-heading {
-    color: #183b56;
+    /* color: #183b56; */
     font-family: "Roboto";
     font-size: 28px;
     font-weight: 700;
@@ -202,7 +250,7 @@
 /* follow -us */
 
 .follow-us-section {
-    background-color: goldenrod;
+    /* background-color: goldenrod; */
     cursor: pointer;
 }
 
@@ -232,3 +280,20 @@
 }
 
 
+
+/* dark-mode */
+.mydark{
+    background-color: black;
+    color: white;
+}
+h1{
+    cursor: pointer;
+}
+body{
+    background-color:white;
+    /* color:black */
+}
+.menusectionHeading{
+    color: white;
+    background-color: red;
+}
