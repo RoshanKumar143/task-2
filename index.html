@@ -3,268 +3,323 @@
     <head>
         <title>Coffee-Website</title>
         <link rel="icon" href="Images/coffee-logo.png"/>
-        <link rel="stylesheet" href="style.css"/>
-<!-- Bootstrap link -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<!-- FontAwesome -->
-        <script src="https://kit.fontawesome.com/f230026de7.js" crossorigin="anonymous"></script>
-        
-        <script src="index.js"></script>
-    </head>
-    <body>
+        <link rel="stylesheet" href="style.css">
 
+<!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+ <!-- External Owl Carousel CSS cdn links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/f230026de7.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>   
 <!-- Navigation-Bar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-success fixed-top">  <!--bg-light-->
+<nav class="navbar navbar-expand-lg bg-body-secondary fixed-top">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-            <img style="width: 100px;height: 50px;" src="Images/coffee-logo-removebg-preview.png"/>
-        </a>
-        <h1 style="color: crimson;font-size: large;font-weight: bolder;text-align: center;justify-content: center;">TEA TIME GURU</h1>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="#">
+        <img style="width: 100px;height: 50px;" src="Images/coffee-logo-removebg-preview.png"/>
+      </a>
+      <h1 id="nav-bar-title"><span id="nav-bar-title-span">TEA </span>TIME GURU</h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
             <a class="nav-link" href="#wcu-section" id="nav-item">Why Choose Us?</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="#explore-menu-section" id="nav-item">Explore Menu</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="#paymentsection" id="nav-item">Delivery & Payment</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="#followus" id="nav-item">Follow Us</a>
-          </li>
-          <li class="nav-item">
-            <div class="mode">
-                <h1 id="nav-change-mode" onclick="changeMode()"><i class="fa-regular fa-moon fa-sm"></i></h1>
-            </div>
-          </li>
-        </ul>
+        </div>
+        <div class="mode">
+            <h1 id="nav-change-mode" onclick="changeMode()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
+                    <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"/>
+                  </svg>
+            </h1>
+        </div>
       </div>
     </div>
   </nav>
 
+
 <!-- Banner-section -->
-        <div id="banner-section" class="d-flex justify-content-center">
-            <div id="coupon">
-                <button onclick="closeCoupon()">&times;</button>
-                <div class="coupon-text">
-                    <h1 class="coupon-heading">FESTIVE <br> COMBO</h1>
-                    <h6 class="sub-coupon-heading">Grab The Ultimate Deal Right Now</h6>    
-                    <h3 class="coupon-para">Get 50% off on first Order</h3>  
-                    <div class="coupon-code">
-                        <div class="coupon-tag">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="50" fill="currentColor" class="bi bi-tags" viewBox="0 0 16 16">
-                                <path d="M3 2v4.586l7 7L14.586 9l-7-7H3zM2 2a1 1 0 0 1 1-1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 2 6.586V2z"/>
-                                <path d="M5.5 5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm0 1a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM1 7.086a1 1 0 0 0 .293.707L8.75 15.25l-.043.043a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 0 7.586V3a1 1 0 0 1 1-1v5.086z"/>
-                              </svg>        
-                        </div>
-                        <div class="coupon-text-div">
-                            <h1 class="coupon-text-header">APPLY CODE <br> <span>FESTIVE</span></h1>
-                        </div>
-                    </div>
+<div id="banner-section" class="d-flex justify-content-center">
+    <div id="coupon">
+        <button onclick="closeCoupon()">&times;</button>
+        <div class="coupon-text">
+            <h1 id="coupon-heading">FESTIVE <br> COMBO</h1>
+            <h6 id="sub-coupon-heading">Grab The Ultimate Deal Right Now</h6>    
+            <h3 id="coupon-para">Get 50% off on first Order</h3>  
+            <div class="coupon-code">
+                <div class="coupon-tag">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="44" height="50" fill="currentColor" class="bi bi-tags" viewBox="0 0 16 16">
+                        <path d="M3 2v4.586l7 7L14.586 9l-7-7H3zM2 2a1 1 0 0 1 1-1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 2 6.586V2z"/>
+                        <path d="M5.5 5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm0 1a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM1 7.086a1 1 0 0 0 .293.707L8.75 15.25l-.043.043a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 0 7.586V3a1 1 0 0 1 1-1v5.086z"/>
+                    </svg>        
+                </div>
+                <div class="coupon-text-div">
+                    <h1 class="coupon-text-header">APPLY CODE <br> <span>FESTIVE</span></h1>
                 </div>
             </div>
-            <div class="banner-content">
-                <h1 class="banner-heading mb-3"><span style="color: crimson;"> COFFEE </span>AND FRIENDS <br>MAKE PERFECT BLEND </h1>
-                <button class="order-button" title="Click">Order Now</button>   
-            </div>
         </div>
+    </div>
+    <div class="banner-content">
+        <h1 class="banner-heading mb-3"><span style="color: crimson;"> COFFEE </span>AND FRIENDS <br>MAKE PERFECT BLEND </h1>
+        <button class="order-button" title="Click">Order Now</button>   
+    </div>
+</div>  
+
 
 <!-- WhyChooseUs - Section -->
-        <div id="wcu-section" class="pt-5 pb-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <h1 class="wcu-section-heading">Why Choose Us?</h1>
-                        <p class="wcu-section-description">
-                            We Specially Import coffee-beans from Araku valley(Andhra Pradesh).
-                        </p> 
-                    </div>
+<div id="wcu-section" class="pt-5 pb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="wcu-section-heading">Why Choose Us?</h1>
+                <p class="wcu-section-description">
+                    We Specially Import coffee-beans from Araku valley(Andhra Pradesh).
+                </p> 
+            </div>
 
-                    <div class="col-12 col-md-4">
-                        <div class="wcu-card">
-                            <img src="Images/online-order-removebg-preview.png" class="wcu-card-image" />
-                            <h1 class="wcu-card-title pb-2">Online Order</h1>
-                            <p class="wcu-card-description pb-3">
-                                There is online order facility available from our coffee shop.
-                            </p>
-                        </div>
-                    </div>
+            <div class="col-12 col-md-4">
+                <div class="wcu-card">
+                    <img src="Images/online-order-removebg-preview.png" class="wcu-card-image" />
+                    <h1 class="wcu-card-title pb-2">Online Order</h1>
+                    <p class="wcu-card-description pb-3">
+                        There is online order facility available from our coffee shop.
+                    </p>
+                </div>
+            </div>
 
-                    <div class="col-12 col-md-4">
-                        <div class="wcu-card">
-                            <img src="Images/online-order-removebg-preview.png" class="wcu-card-image" />
-                            <h1 class="wcu-card-title">Fresh Coffee</h1>
-                            <p class="wcu-card-description">
-                                The Staff in Coffee shop can prepare coffee at the moment of order placed.And will be delivered with in stipulated time.
-                            </p>
-                        </div>
-                    </div>
+            <div class="col-12 col-md-4">
+                <div class="wcu-card">
+                    <img src="Images/online-order-removebg-preview.png" class="wcu-card-image" />
+                    <h1 class="wcu-card-title">Fresh Coffee</h1>
+                    <p class="wcu-card-description">
+                        The Staff in Coffee shop can prepare coffee at the moment of order placed.And will be delivered with in stipulated time.
+                    </p>
+                </div>
+            </div>
 
-                    <div class="col-12 col-md-4">
-                        <div class="wcu-card">
-                            <img src="Images/online-order-removebg-preview.png" class="wcu-card-image" />
-                            <h1 class="wcu-card-title">On First Order</h1>
-                            <p class="wcu-card-description">
-                                Coupons & Offers upto
-                                <span class="offers">50% OFF</span>
-                                and Exclusive Promo Codes on All type of coffee Orders.
-                            </p>
-                        </div>
-                    </div>
+            <div class="col-12 col-md-4">
+                <div class="wcu-card">
+                    <img src="Images/online-order-removebg-preview.png" class="wcu-card-image" />
+                    <h1 class="wcu-card-title">On First Order</h1>
+                    <p class="wcu-card-description">
+                        Coupons & Offers upto
+                        <span class="offers">50% OFF</span>
+                        and Exclusive Promo Codes on All type of coffee Orders.
+                    </p>
                 </div>
             </div>
         </div>
+    </div>
+</div>
+
+
+
 
 <!-- Menu-Section -->
-        <div class="explore-menu-section pt-5 pb-5" id="explore-menu-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <h1 class="menu-section-heading">Menu Card</h1>
-
-                        <marquee>Please View Menu Card By Clicking on View All</marquee>      
-                    </div>
-
-                    <div class="col-12 col-lg-3 col-md-6">
-                        <div class="shadow menu-item-card p-3 mb-3">
-                            <img src="Images/6.jpg" class="menu-item-images" />
-                            <h1 class="menu-item-title">Chai</h1>                      
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-lg-3 col-md-6">
-                        <div class="shadow menu-item-card p-3 mb-3">
-                            <img src="Images/5.jpg" class="menu-item-images" />
-                            <h1 class="menu-item-title">Green Tea</h1>                      
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-lg-3 col-md-6">
-                        <div class="shadow menu-item-card p-3 mb-3">
-                            <img src="Images/3.jpg" class="menu-item-images" />
-                            <h1 class="menu-item-title">Coffee</h1>                      
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-lg-3 col-md-6">
-                        <div class="shadow menu-item-card p-3 mb-3">
-                            <img src="Images/milk.jpg" class="menu-item-images" />
-                            <h1 class="menu-item-title">Milk</h1>                    
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-3 col-md-6">
-                        <div class="shadow menu-item-card p-3 mb-3">
-                            <img src="Images/allam-tea.jpg" class="menu-item-images" />
-                            <h1 class="menu-item-title">Allam Tea</h1>                    
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-lg-3 col-md-6">
-                        <div class="shadow menu-item-card p-3 mb-3">
-                            <img src="Images/Bakry-Items.jpg" class="menu-item-images" />
-                            <h1 class="menu-item-title">Bakery-Items</h1>                     
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-lg-3 col-md-6">
-                        <div class="shadow menu-item-card p-3 mb-3">
-                            <img src="Images/plate-greens-vegetables-chunks-wallpaper-preview.jpg" class="menu-item-images" />
-                            <h1 class="menu-item-title">Salads</h1>                      
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-lg-3 col-md-6">
-                        <div class="shadow menu-item-card p-3 mb-3">
-                            <img src="Images/dessert.jpg" class="menu-item-images" />
-                            <h1 class="menu-item-title">Desserts</h1>                     
-                        </div>
-                    </div>
-                    <a href="#">View All 
-                        <!-- bootstrap-icon  -->
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-right" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8Zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5Z"/>
-                        </svg>
-                    </a> 
+<div id="explore-menu-section">
+<div class="container">
+    <h1 class="menu-title">Menu Card</h1>
+    <div class="row">
+        <div class="owl-carousel owl-theme">
+            <div class="item">    
+                <div class="card">
+                    <img class="card-img" src="Images/6.jpg" alt="IceCream" >
+                    <div style="border-top: 2px solid grey; margin-top: 10px;"></div>
+                    <h1 class="text">Chai</h1>
                 </div>
-            </div>            
-        </div>
+            </div> 
+            
+            <div class="item">    
+                <div class="card">
+                    <img class="card-img" src="Images/5.jpg" alt="IceCream" >
+                    <div style="border-top: 2px solid grey; margin-top: 10px;"></div>
+                    <h1 class="text">Green Tea</h1>
+                </div>
+            </div> 
+
+            <div class="item">    
+                <div class="card">
+                    <img class="card-img" src="Images/3.jpg" alt="IceCream" >
+                    <div style="border-top: 2px solid grey; margin-top: 10px;"></div>
+                    <h1 class="text">Coffee</h1>
+                </div>
+            </div> 
+
+            <div class="item">    
+                <div class="card">
+                    <img class="card-img" src="Images/milk.jpg" alt="IceCream" >
+                    <div style="border-top: 2px solid grey; margin-top: 10px;"></div>
+                    <h1 class="text">Milk</h1>
+                </div>
+            </div> 
+
+            <div class="item">    
+                <div class="card">
+                    <img class="card-img" src="Images/allam-tea.jpg" alt="IceCream" >
+                    <div style="border-top: 2px solid grey; margin-top: 10px;"></div>
+                    <h1 class="text">Allam Tea</h1>
+                </div>
+            </div> 
+
+            <div class="item">    
+                <div class="card">
+                    <img class="card-img" src="Images/Bakry-Items.jpg" alt="IceCream" >
+                    <div style="border-top: 2px solid grey; margin-top: 10px;"></div>
+                    <h1 class="text">Bakery-Items</h1>
+                </div>
+            </div> 
+
+            <div class="item">    
+                <div class="card">
+                    <img class="card-img" src="Images/plate-greens-vegetables-chunks-wallpaper-preview.jpg" alt="IceCream" >
+                    <div style="border-top: 2px solid grey; margin-top: 10px;"></div>
+                    <h1 class="text">Salads</h1>
+                </div>
+            </div> 
+
+            <div class="item">    
+                <div class="card">
+                    <img class="card-img" src="Images/dessert.jpg" alt="IceCream" >
+                    <div style="border-top: 2px solid grey; margin-top: 10px;"></div>
+                    <h1 class="text">Desserts</h1>
+                </div>
+            </div> 
+        </div>    
+    </div>
+    <div id="view-all">
+        <a href="#">View All 
+            <!-- bootstrap-icon  -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8Zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5Z"/>
+            </svg>
+        </a>
+    </div>
+</div>
+</div>
+
 
 <!-- Delivery & Payment Section -->
-        <div class="delivery-and-payment-section pt-5 pb-5" id="paymentsection">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-5 order-1 order-md-2">
-                        <div class="text-center">
-                            <img src="Images/order-now-removebg-preview.png" class="delivery-and-payment-section-img" />
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-7 order-2 order-md-1">
-                        <h1 class="delivery-and-payment-section-heading">
-                            Delivery and Payment Details
-                        </h1>
-                        <p class="delivery-and-payment-section-description">
-                            Enjoy hassle-free payment with the multiple payment options
-                            available for you.<br/> With live track your order on maps too... 
-                        </p>
-                        <button class="custom-button">Order Now</button>
-                        <div>
-                            <img src="Images/visa.png" class="payment-card-img" />
-                            <img src="Images/master-card-img.png" class="payment-card-img" />
-                            <img src="Images/paypal-card-img.png" class="payment-card-img" />
-                            <img src="Images/american-express-img.png" class="payment-card-img" />
-                            <img src="Images/upi-removebg-preview.png"/>
-                        </div>
-                    </div>
+<div class="delivery-and-payment-section pt-5 pb-5" id="paymentsection">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-5 order-1 order-md-2">
+                <div class="text-center">
+                    <img src="Images/order-now-removebg-preview.png" class="delivery-and-payment-section-img" />
+                </div>
+            </div>
+            <div class="col-12 col-md-7 order-2 order-md-1">
+                <h1 class="delivery-and-payment-section-heading">
+                    Delivery and Payment Details
+                </h1>
+                <p class="delivery-and-payment-section-description">
+                    Enjoy hassle-free payment with the multiple payment options
+                    available for you.<br/> With live track your order on maps too... 
+                </p>
+                <button class="custom-button">Order Now</button>
+                <div>
+                    <img src="Images/visa.png" class="payment-card-img" />
+                    <img src="Images/master-card-img.png" class="payment-card-img" />
+                    <img src="Images/paypal-card-img.png" class="payment-card-img" />
+                    <img src="Images/american-express-img.png" class="payment-card-img" />
+                    <img src="Images/upi-removebg-preview.png"/>
                 </div>
             </div>
         </div>
+    </div>
+</div>
+
+
+
 
 <!-- Follow US - Section -->
-        <div class="follow-us-section pt-5 pb-5" id="followus">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12" >
-                        <h1 class="follow-us-section-heading">Follow Us</h1>
-                        <div class="d-flex flex-row justify-content-center" id="followus-section-socio">
-                            <a href="https://www.twitter.com">
-                                <i class="fa-brands fa-x-twitter  fa-2xl"></i>
-                            </a>    
-                            <!-- fa-flip  fa-beat-fade -->
-                            <a href="https://www.instagram.com">
-                                <i class="fa-brands fa-instagram  fa-2xl"></i>
-                            </a>
+<div class="follow-us-section pt-5 pb-5" id="followus">
+    <div class="container">
+        <div class="row">
+            <div class="col-12" >
+                <h1 class="follow-us-section-heading">Follow Us</h1>
+                <div class="d-flex flex-row justify-content-center" id="followus-section-socio">
+                    <a href="https://www.twitter.com">
+                        <i class="fa-brands fa-x-twitter  fa-2xl"></i>
+                    </a>    
+                    <a href="https://www.instagram.com">
+                        <i class="fa-brands fa-instagram  fa-2xl"></i>
+                    </a>
 
-                            <a href="https://www.facebook.com">
-                                <i class="fa-brands fa-square-facebook  fa-2xl"></i>
-                            </a>
-                        </div>
-                    </div>
+                    <a href="https://www.facebook.com">
+                        <i class="fa-brands fa-square-facebook  fa-2xl"></i>
+                    </a>
                 </div>
             </div>
         </div>
+    </div>
+</div>
+
+
+
+<!--geo-location -->
+     <div class="user-location">
+        <button onclick="geolocation()">Get Location</button>
+        <div class="output">
+            <p id="out" class="output-para"></p>
+            <p id="weather" class="output-para"></p>
+        </div>
+    </div>   
+
 
 <!-- Footer-Section -->
-        <div class="footer-section pt-5 pb-5" id="footer-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <img src="Images/coffee-logo-removebg-preview.png" class="food-munch-logo" />
-                        <br/><br/>
-                        <p class="footer-section-address">ADDRESS:</p>
-                        <p class="footer-section-address">
-                            HITECH City, Hyderabad, India.
-                        </p>
-                    </div>
-                </div>
+<div class="footer-section pt-5 pb-5" id="footer-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <img src="Images/coffee-logo-removebg-preview.png" class="food-munch-logo" />
+                <br/><br/>
+                <p class="footer-section-address">ADDRESS:</p>
+                <p class="footer-section-address">
+                    All Over India.
+                </p>
             </div>
         </div>
+    </div>
+</div>
+
+  <script src="index.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+   
+    <!-- jquery sdn link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- javascript cdn link for owl carousel library-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script>
         
-    </body>
+        //menu-section
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                margin:10,
+                nav:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:3
+                    },
+                    1000:{
+                        items:5
+                    }
+                }
+            })
+
+    </script>
+
+</body>
 </html>

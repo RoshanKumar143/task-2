@@ -2,90 +2,69 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
+    /* text-decoration: none; */
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/* dark-mode */
+.mydark{
+    background-color: black;
+    color: white;
+}
+.mode{
+    margin-left: 50px;
+    margin-bottom: 10px;
+    height: 40px;
+}
+h1{
+    cursor: pointer;
+    text-align: center;
 }
 
 /* navigation-Bar */
+
 #nav-item{
-    color: black;
     text-align: center;
+    color: crimson;
 }
+#nav-bar-title{
+    font-size: 22px;
+    font-weight: 700;
+    margin-left: 40px;
+    margin-right: 40px;
+    color: green;
+}
+#nav-bar-title-span{
+    color: crimson;
+}
+
 #nav-item:hover{
     color: white;
-    background-color: black;
-    border: 2px solid red;
-    font-size: 20px ;
-    transition: .5s ease;
+    background-color: grey;
+    font-size: 16px;
+    font-weight:600;
+    margin-left: 20px;
+    border-radius: 14px;
+    text-decoration: underline;
+    transition: 1s ease;
 }
-.mode{
-    text-align: center;
-}
+
+
+
+
+
 
 /* Banner-section */
 #banner-section{
     background-image:url("Images/banner_img.jpg");
+    width: 100%;
     height: 100vh;
     background-size: cover;
     z-index: 1;
 }
-
-#coupon{
-    background: url("Images/coffee-bg-img-4.jpg");
-    background-size: cover;
-    width: 90%;
-    height: 400px;
-    background-color: goldenrod;
-    position: absolute;
-    margin-top: 10%;
-    margin-right: 3%;
-    z-index: 100;
-    /* visibility: hidden; */
-    position: fixed;
-}
-.coupon-text{
-    text-align: center;
-}
-.coupon-heading{
-    margin-top: 100px;
-    font-size: 40px;
-    color: #ffff;
-    text-shadow: -2px -4px 2px purple ;
-}
-.sub-coupon-heading{
-    color: #ffff;
-    text-transform:uppercase;
-}
-.coupon-para{
-    color: #ffffff;
-    text-transform: capitalize;
-}
-
-.coupon-code{
-    margin: 15px 40%;
-    background-color: purple;
-    border-radius: 14px;
-    padding: 10px;
-}
-.coupon-tag{
-    float: left;
-    color: white;
-}
-
-.coupon-text-div{
-    /* border-left: 2px solid red; */
-}
-.coupon-text-header{
-    font-size: 17px;
-    color: purple;
-    color: yellow;
-}
-.coupon-text-header span{
-    color: white;
-    font-weight: 600;
-    font-size: 25px;
-}
-
-
 
 .banner-content{
     text-align: center;
@@ -113,6 +92,67 @@
     background-color: #323f4b;
     color: #a58d00;
 } 
+/* coupon-section */
+#coupon{
+    background: url("Images/coffee-bg-img-4.jpg");
+    background-size: cover;
+    /* height: 70%; */
+    width: 80%;
+    background-color: goldenrod;
+    position: absolute;
+    margin-top: 10%;
+    z-index: 100;  
+    /* visibility: hidden; */
+    position: fixed;
+}
+#coupon-heading{
+    margin-top: 100px;
+    font-size: 40px;
+    color: #ffff;
+    text-shadow: -2px -4px 2px purple ;
+}
+#sub-coupon-heading{
+    color: #ffff;
+    text-transform:uppercase;
+    text-align: center;
+}
+#coupon-para{
+    color: #ffffff;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.coupon-code{
+    /* width: 60%; */
+    margin: 0 30% ;
+    background-color: purple;
+    border-radius: 20px;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.coupon-tag{
+    color: white;
+    
+}
+
+.coupon-text-header{
+    font-size: 17px;
+    color: purple;
+    color: yellow;
+}
+.coupon-text-header span{
+    color: white;
+    font-weight: 600;
+    font-size: 25px;
+} 
+
+
+
+
+
+
 
 
 /* why choose us - section */
@@ -121,7 +161,7 @@
 }
 
 .wcu-section-heading {
-    color: black;
+    /* color: black; */
     font-family: "Roboto";
     font-size: 28px;
     font-weight: 700;
@@ -163,49 +203,39 @@
     font-weight: 600;
 }
 
+
+
+
+
+
+
 /* Menu-section */
-.explore-menu-section{
-    /* background-color: #ced5db; */
+.container{
+    width: 70%;
+    margin: 30px auto;
+    
 }
-.explore-menu-section a {
-    text-decoration: none;
-    /* background-color: rgb(160, 160, 179); */
-    font-size: large;
-    font-weight: bolder;
-    border-radius: 20%;
-    color: blue;
-    padding:0px 10px ;
-    margin-left: 88%;
-}
-
-.menu-section-heading {
-    /* color: #010b13; */
-    font-family: "Roboto";
-    font-size: 28px;
-    font-weight: 700;
-}
-
-.menu-item-images {
-    height: 150px;
-    width:90%;
-    padding-left: 5%;
-    border-radius: 50%;
-}
-
-.menu-item-title {
-    color: crimson;
-    font-family: "Roboto";
-    font-size: 18px;
-    font-weight: 500;
-    margin-top: 24px;
+.menu-title{
     text-align: center;
+    margin-bottom: 50px;
+    font-size: 32px;
 }
-.menu-item-card {
-    border-radius: 16px;
+.card-img{
+    width: 100%;
+    height: 150px;
 }
-.menu-item-card span{
-    padding-left: 50px;
+.text{
+    text-align: center;
+    font-size: 18px;
 }
+#view-all{
+    margin-left: 80%;
+}
+
+
+
+
+
 
 
 /* Delivery & payment section */
@@ -247,6 +277,12 @@
 }
 
 
+
+
+
+
+
+
 /* follow -us */
 
 .follow-us-section {
@@ -267,6 +303,31 @@
     letter-spacing: 20px;
 }
 
+/* geo-location */
+.user-location{
+    text-align: center;
+    line-height: 20px;
+}
+.user-location button{
+    border: none;
+    background-color: #183b56;
+    padding: 10px;
+    border-radius: 16px;
+    color: #d0b200;
+    margin: 10px;
+}
+.output{
+    /* background-color: lightblue;
+    width: 60%;
+    margin-left: 20%;
+    padding: 20px;
+    border-radius: 16px; */
+}
+.output-para{
+    font-size: 16px;
+}
+
+
 /* footer-section */
 .footer-section {
     background-color: grey;
@@ -276,24 +337,5 @@
 .footer-section-address {
     color: white;
     font-family: "Roboto";
-    font-size: 14px;
-}
-
-
-
-/* dark-mode */
-.mydark{
-    background-color: black;
-    color: white;
-}
-h1{
-    cursor: pointer;
-}
-body{
-    background-color:white;
-    /* color:black */
-}
-.menusectionHeading{
-    color: white;
-    background-color: red;
+    font-size: 16px;
 }
