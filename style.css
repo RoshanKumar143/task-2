@@ -339,3 +339,11 @@ h1{
     font-family: "Roboto";
     font-size: 16px;
 }
+
+
+/* media-query's */
+@media only screen and (max-width: 900px) {
+    #banner-section{
+        height : 10vh;
+    }
+}
