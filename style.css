@@ -10,15 +10,39 @@ body{
 
 
 /* dark-mode */
+.mode-btn{
+    right: 0px;
+    margin: 1px;
+    padding: 5px;
+    border: none;
+
+
+}
+.mode-btn img{
+    width: 35px;
+    background-color: rgb(181, 168, 168); 
+    border-radius: 15px;
+    padding: 1px;
+}
+
 .mydark{
     background-color: black;
     color: white;
+} 
+/* .change-mode-background-img{
+    background-image: url("https://img.icons8.com/fluency/30/000000/light-on.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+
+
+
+.nav-dark{
+    background-color: black;
 }
-.mode{
-    margin-left: 50px;
-    margin-bottom: 10px;
-    height: 40px;
-}
+
+
 h1{
     cursor: pointer;
     text-align: center;
@@ -39,9 +63,10 @@ h1{
 }
 #nav-bar-title-span{
     color: crimson;
+    font-size: 50px;
 }
 
-#nav-item:hover{
+#nav-item:hover, #dark-light:hover{
     color: white;
     background-color: grey;
     font-size: 16px;
@@ -59,11 +84,17 @@ h1{
 
 /* Banner-section */
 #banner-section{
-    background-image:url("Images/banner_img.jpg");
-    width: 100%;
-    height: 100vh;
+    /* background-image:url("Images/banner_img.jpg"); */
+    background: url("https://source.unsplash.com/1600x1000/?cafe");
+    /* width: 100%; */
+    max-width: 100%;
+    /* height: 70vh; */
+    height: 500px;
     background-size: cover;
     z-index: 1;
+}
+#dark-light{
+    background-color: grey;
 }
 
 .banner-content{
@@ -339,6 +370,10 @@ h1{
     font-family: "Roboto";
     font-size: 16px;
 }
+
+
+
+
 
 
 /* media-query's */

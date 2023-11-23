@@ -3,7 +3,7 @@
     <head>
         <title>Coffee-Website</title>
         <link rel="icon" href="Images/coffee-logo.png"/>
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="style.css">
 
 <!-- Bootstrap link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -13,16 +13,20 @@
 
 <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/f230026de7.js" crossorigin="anonymous"></script>
-
+<!-- boxicons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     </head>
     <body>   
 <!-- Navigation-Bar -->
 <nav class="navbar navbar-expand-lg bg-body-secondary fixed-top">
     <div class="container-fluid" id="navbar-element">
-      <a class="navbar-brand" href="#">
+      <!-- <a class="navbar-brand" href="#">
         <img style="width: 100px;height: 50px;" src="Images/coffee-logo-removebg-preview.png"/>
-      </a>
-      <h1 id="nav-bar-title"><span id="nav-bar-title-span">TEA </span>TIME GURU</h1>
+      </a> 
+      <h1 id="nav-bar-title"><span id="nav-bar-title-span">TEA </span>TIME GURU</h1> -->
+      <h1 id="nav-bar-title"><span id="nav-bar-title-span">T</span> 
+        <i class='bx bx-time' style='color:#39df0f;font-size: 35px;padding-top:10px'></i>
+      </h1>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -34,6 +38,10 @@
             <a class="nav-link" href="#paymentsection" id="nav-item">Delivery & Payment</a>
             <a class="nav-link" href="#followus" id="nav-item">Follow Us</a>
             <a class="nav-link" href="#geo-location" id="nav-item">Geo-Location</a>
+            <!-- <a class="nav-link" href="#" id="nav-item" onclick="changeMode()">Mode</a>   -->
+            <button class="mode-btn" id="change-mode" onclick="changeMode()">
+                <img src="https://img.icons8.com/fluency/30/ffffff/light-off.png" alt="">
+            </button>
         </div>
       </div>
     </div>
@@ -42,7 +50,7 @@
 
 <!-- Banner-section -->
 <div id="banner-section" class="d-flex justify-content-center">
-    <div id="coupon">
+    <!-- <div id="coupon">
         <button onclick="closeCoupon()">&times;</button>
         <div class="coupon-text">
             <h1 id="coupon-heading">FESTIVE <br> COMBO</h1>
@@ -60,12 +68,13 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="banner-content">
-        <img id="dark-light" src="Images/mode.png" alt="dark-light" width="50"/>
-        <h1 class="banner-heading mb-3"><span style="color: crimson;"> COFFEE </span>AND FRIENDS <br>MAKE PERFECT BLEND </h1>
+<!-- <img id="dark-light" src="Images/mode.png" alt="dark-light" width="50"/> -->
+        <h1 class="banner-heading mb-3">TEA <span style="color: crimson;";>AND</span>FRIENDS <br>MAKE PERFECT BLEND</h1>
+        <!-- <h1 class="banner-heading mb-3"><span style="color: black;">Sip, sip, hooray!</span> <span style="color: crimson;"> It's tea time. </span></h1> -->
         <button class="order-button" title="Click">Order Now</button>   
-    </div>
+    </div> 
 </div>  
 
 
